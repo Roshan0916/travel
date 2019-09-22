@@ -6,7 +6,7 @@
     <div class="header-input">
         <img :src="url1" class="icon">
         输入城市/景点/游玩主题</div>
-    <div class="header-right">城市
+    <div class="header-right">{{this.city}}
         <img :src="url2" class="icon">
     </div>
   </div>
@@ -14,6 +14,9 @@
 <script>
 export default {
   name: 'HomeHeader',
+  props: {
+    city: String
+  },
   data () {
     return {
       url: '/../../../static/images/fanhui.png',

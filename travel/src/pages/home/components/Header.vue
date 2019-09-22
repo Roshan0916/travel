@@ -6,9 +6,11 @@
     <div class="header-input">
         <img :src="url1" class="icon">
         输入城市/景点/游玩主题</div>
-    <div class="header-right">{{this.city}}
-        <img :src="url2" class="icon">
-    </div>
+        <router-link to='/city'>
+          <div class="header-right">{{this.city}}
+              <img :src="url2" class="icon">
+          </div>
+        </router-link>
   </div>
 </template>
 <script>
@@ -53,6 +55,7 @@ export default {
       margin-left: .1rem
       width: 1.24rem
       float: right
+      color:#fff
       .icon
         height: .25rem
 </style>

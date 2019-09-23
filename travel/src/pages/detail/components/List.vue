@@ -9,7 +9,7 @@
         <span class="item-title-icon"></span>
          {{item.title}}   
       </div>
-      <div v-if="item.children" class="">
+      <div v-if="item.children" >
         <detail-list :list="item.children"></detail-list>
       </div>
     </div>

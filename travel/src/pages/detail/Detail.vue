@@ -29,7 +29,7 @@ export default {
       sightName:'',
       bannerImg:'',
       gallaryImgs:[],
-      list:'',
+      list:[],
     }
   },
   methods: {

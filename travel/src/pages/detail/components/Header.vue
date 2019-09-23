@@ -67,6 +67,7 @@ export default {
       height: .5rem
       margin:.2rem 0 0 .2rem
   .header-fixed
+    z-index: 2
     position :fixed
     top:0
     left:0

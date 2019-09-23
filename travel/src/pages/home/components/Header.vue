@@ -14,14 +14,11 @@
   </div>
 </template>
 <script>
-import { mapstate, mapState} from 'vuex'
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  computed:{
+  computed: {
     ...mapState(['city'])
-  },
-  props: {
-    city: String
   },
   data () {
     return {
